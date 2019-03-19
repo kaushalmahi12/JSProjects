@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Snakes Game
+        </title>
+        <script type="text/javascript" src="./snakes.js"></script>
+	    <style type="text/css">
+	    html, body {
+		    margin: 0px;
+	    }
+
+	    canvas {
+		    display: block;
+            background-color: black;
+            border: 2px solid orange;
+	    }
+
+	</style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <script>
+            window.onload = (ev) => {
+                const game = new Game();
+                game.init();
+            };
+        </script>
+    </body>
+</html>
